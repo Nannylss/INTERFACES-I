@@ -1,0 +1,81 @@
+[
+  {
+    "id": "0a20a448-8159-4cde-965e-c75699722091",
+    "user_id": "10d21a42-fd5b-4c8b-9e36-69f990b45caf",
+    "tipo": "muro",
+    "entradas": {
+      "espesor": 0.3,
+      "largo": 2,
+      "alto": 5
+    },
+    "resultado": {
+      "titulo": "Muro de ladrillo",
+      "formula": "Superficie = largo × alto.",
+      "items": [
+        {
+          "nombre": "Superficie",
+          "valor": 10.0,
+          "unidad": "m²"
+        },
+        {
+          "nombre": "Cemento",
+          "valor": 152.0,
+          "unidad": "kg"
+        },
+        {
+          "nombre": "Arena",
+          "valor": 1.15,
+          "unidad": "m³"
+        },
+        {
+          "nombre": "Ladrillos",
+          "valor": 1200,
+          "unidad": "unidades"
+        }
+      ]
+    },
+    "created_at": "2026-10-25T16:35:21",
+    "updated_at": "2026-10-25T16:35:21"
+  },
+  {
+    "id": "054bac4e-167f-453f-a5b3-e8c1f79764d2",
+    "user_id": "02da3722-05ae-4875-9aad-443212b66546",
+    "tipo": "viga",
+    "entradas": {
+      "largo": 4.5
+    },
+    "resultado": {
+      "titulo": "Viga de hormigón",
+      "formula": "Cada material se calcula con un coeficiente por metro de viga.",
+      "items": [
+        {
+          "nombre": "Cemento",
+          "valor": 18.9,
+          "unidad": "kg"
+        },
+        {
+          "nombre": "Arena",
+          "valor": 0.042,
+          "unidad": "m³"
+        },
+        {
+          "nombre": "Piedra",
+          "valor": 0.042,
+          "unidad": "m³"
+        },
+        {
+          "nombre": "Hierro del 8",
+          "valor": 8.4,
+          "unidad": "m"
+        },
+        {
+          "nombre": "Hierro del 4",
+          "valor": 6.3,
+          "unidad": "m"
+        }
+      ]
+    },
+    "created_at": "2026-10-25T16:40:37",
+    "updated_at": "2026-10-25T16:40:37"
+  }
+]

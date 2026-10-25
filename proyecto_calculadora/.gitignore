@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.tmp
+.venv/
+.env
+.DS_Store
+# Los datos de demostración pueden cambiar localmente.
+data/*.tmp

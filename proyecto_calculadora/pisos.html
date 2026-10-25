@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pisos</title><link rel="stylesheet" href="css/estilos.css"><script src="js/app.js" defer></script></head>
+<body><main class="contenedor">
+<a class="volver" href="menu.html">← VOLVER AL MENÚ</a><div class="mensaje" role="alert"></div>
+<form class="panel formulario calculo-form" data-tipo="pisos">
+<h1>🟪 PISOS</h1><p class="subtitulo">Calcula el área y agrega material para los recortes.</p>
+<label for="ancho">Ancho (m)</label><input id="ancho" name="ancho" type="number" step="0.01" min="0.01" placeholder="ej: 4.00" required>
+<label for="largo">Largo (m)</label><input id="largo" name="largo" type="number" step="0.01" min="0.01" placeholder="ej: 5.00" required>
+<p class="nota">Se agrega automáticamente un 10% adicional para recortes.</p>
+<div class="botones"><button class="boton" type="submit">⚙ CALCULAR Y GUARDAR</button><button class="boton naranja" type="reset">✕ LIMPIAR</button></div>
+</form><div class="pie">CONSTRUYE CON PRECISIÓN · CALCULA CON CONFIANZA</div></main></body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crear cuenta</title><link rel="stylesheet" href="css/estilos.css"><script src="js/app.js" defer></script>
+</head>
+<body>
+<main class="contenedor">
+  <section class="titulo"><div class="linea"></div><h1>CREAR CUENTA</h1><p>MASTER EN CONSTRUCCIÓN</p><div class="linea"></div></section>
+  <div class="mensaje" role="alert"></div>
+  <form id="registro-form" class="panel login">
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+    <label for="nuevo-usuario">Usuario</label>
+    <input id="nuevo-usuario" name="usuario" type="text" placeholder="Tu usuario" autocomplete="username" minlength="3" required>
+    <label for="nueva-password">Contraseña</label>
+    <input id="nueva-password" name="password" type="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password" minlength="6" required>
+    <label for="confirmar-password">Confirmar contraseña</label>
+    <input id="confirmar-password" name="confirmar_password" type="password" placeholder="Repite la contraseña" autocomplete="new-password" minlength="6" required>
+    <button class="boton" type="submit">CREAR CUENTA</button>
+    <a class="boton secundario" href="index.html">VOLVER</a>
+  </form>
+</main>
+</body>
+</html>

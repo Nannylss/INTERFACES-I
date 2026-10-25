@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de construcción</title><link rel="stylesheet" href="css/estilos.css"><script src="js/app.js" defer></script>
+</head>
+<body>
+<main class="contenedor">
+  <section class="panel usuario">
+    <div><small>BIENVENIDO</small><h2 data-nombre-usuario>Usuario</h2><span class="rol">TÉCNICO</span></div>
+    <div class="usuario-acciones"><button class="boton naranja" data-logout>↪ SALIR</button></div>
+  </section>
+  <div class="mensaje" role="alert"></div>
+  <section class="centro"><p>MENÚ PRINCIPAL</p><h1>CALCULADORA</h1><p>DE CONSTRUCCIÓN</p></section>
+  <div class="linea"></div>
+  <nav class="panel menu" aria-label="Tipos de cálculo">
+    <a class="item" href="muro.html"><span class="numero">1</span><span class="icono">🧱</span><strong>MURO DE LADRILLO</strong><span class="flecha">→</span></a>
+    <a class="item" href="viga.html"><span class="numero">2</span><span class="icono">🏗️</span><strong>VIGA DE HORMIGÓN</strong><span class="flecha">→</span></a>
+    <a class="item" href="columna.html"><span class="numero">3</span><span class="icono">🏛️</span><strong>COLUMNAS DE HORMIGÓN</strong><span class="flecha">→</span></a>
+    <a class="item" href="contrapiso.html"><span class="numero">4</span><span class="icono">◻️</span><strong>CONTRAPISOS</strong><span class="flecha">→</span></a>
+    <a class="item" href="techo.html"><span class="numero">5</span><span class="icono">🏠</span><strong>TECHO</strong><span class="flecha">→</span></a>
+    <a class="item" href="pisos.html"><span class="numero">6</span><span class="icono">🟪</span><strong>PISOS</strong><span class="flecha">→</span></a>
+    <a class="item" href="pintura.html"><span class="numero">7</span><span class="icono">🎨</span><strong>PINTURA</strong><span class="flecha">→</span></a>
+  </nav>
+  <section id="historial" class="panel historial"><h2>HISTORIAL DE CÁLCULOS</h2><p class="historial-intro">Aquí puedes consultar, editar o eliminar tus cálculos guardados.</p><div class="cargando">Cargando historial...</div></section>
+  <div class="pie">CONSTRUYE CON PRECISIÓN · CALCULA CON CONFIANZA</div>
+</main>
+</body>
+</html>

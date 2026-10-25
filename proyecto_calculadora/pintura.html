@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintura</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<main class="contenedor">
+ <a class="volver" href="menu.html">← VOLVER AL MENÚ</a>
+    <div class="mensaje" role="alert"></div>
+        <form class="panel formulario calculo-form" data-tipo="pintura">
+            <h1>🎨 PINTURA</h1>
+            <p class="subtitulo">Estima los litros necesarios para cubrir la superficie.</p>
+            <label for="superficie">Superficie del muro (m²)</label>
+            <input id="superficie" name="superficie" type="number" step="0.01" min="0.01" placeholder="ej: 30.00" required>
+            <p class="nota">Rendimiento estimado: 6 m² por litro. El resultado se redondea hacia arriba.</p>
+            <div class="botones"></div>
+            <button class="boton" type="submit">⚙ CALCULAR Y GUARDAR</button>
+            <button class="boton naranja" type="reset">✕ LIMPIAR</button>
+        </form>
+    <div class="pie">CONSTRUYE CON PRECISIÓN · CALCULA CON CONFIANZA</div>
+</main>
+</body>
+</html>
