@@ -12,7 +12,7 @@ import json
 import math
 import uuid
 
-# ------------------ Configuración ------------------
+
 
 CARPETA_PROYECTO = Path(__file__).parent
 CARPETA_DATOS = CARPETA_PROYECTO / "data"
@@ -25,7 +25,7 @@ app = Flask(__name__, static_folder=None)
 app.secret_key = "clave-local-para-el-proyecto"
 
 
-# ------------------ Funciones para JSON ------------------
+
 
 def leer_json(archivo, valor_inicial):
     """Lee una lista desde un archivo JSON."""
@@ -80,7 +80,7 @@ def necesita_sesion(funcion):
     return revisar_sesion
 
 
-# ------------------ Cálculos ------------------
+
 
 def numero(datos, nombre):
     """Convierte un dato en número y revisa que sea positivo."""
@@ -221,7 +221,6 @@ def calcular(tipo, datos):
     }
 
 
-# ------------------ Rutas de usuarios ------------------
 
 @app.post("/api/auth/register")
 def registrar():
@@ -281,7 +280,6 @@ def ver_usuario():
     return jsonify({"usuario": usuario_publico(usuario)})
 
 
-# ------------------ Rutas CRUD de cálculos ------------------
 
 @app.post("/api/calculations")
 @necesita_sesion
@@ -377,7 +375,7 @@ def eliminar_calculo(id_calculo):
     return jsonify({"mensaje": "Cálculo eliminado correctamente."})
 
 
-# ------------------ Archivos HTML, CSS y JavaScript ------------------
+
 
 @app.get("/")
 def inicio():
@@ -386,7 +384,7 @@ def inicio():
 
 @app.get("/<path:nombre_archivo>")
 def archivo_frontend(nombre_archivo):
-    # No permitimos abrir directamente los archivos de datos.
+    
     if nombre_archivo.startswith("data/") or ".." in nombre_archivo:
         return jsonify({"error": "Archivo no permitido."}), 403
     return send_from_directory(CARPETA_PROYECTO, nombre_archivo)
